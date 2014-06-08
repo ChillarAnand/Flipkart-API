@@ -1,14 +1,13 @@
 #!/usr/bin/env python
 
 """
-Unofficial Python API for ThePirateBay.
-Currently supports searching, recent torrents and top 100 torrents.
+Unofficial Python API for Flipkart.
 
-@author Karan Goel
-@email karan@goel.im
+@author Anand Reddy Pandikunta
+@email anand21nanda@gmail.com
 
 The MIT License (MIT)
-Copyright (c) 2013 Karan Goel
+Copyright (c) 2013 Anand Reddy Pandikunta
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
@@ -30,11 +29,10 @@ ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
+
 import sys
 
 if sys.version_info >= (3, 0):
-    from tpb.tpb import TPB
-    from tpb.constants import ORDERS, CATEGORIES
+    from flipkart.flipkart import Flipkart
 else:
-    from tpb import TPB
-    from constants import ORDERS, CATEGORIES
+    from flipkart import Flipkart
